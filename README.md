@@ -1,1 +1,0 @@
-# emagreca-ate-10kg-em-30dias.github.io
