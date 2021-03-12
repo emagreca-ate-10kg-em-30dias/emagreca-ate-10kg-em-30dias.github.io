@@ -1,0 +1,821 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: calc(18px * 1.5);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #faf9f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5f5f5f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #161b1c;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    white-space: normal;
+}
+
+h2,
+span {
+    font-size: 26px;
+    line-height: calc(26px * 1.2);
+}
+
+span {
+    color: #faf9f9;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: calc(22px * 1.5);
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 50px 2%;
+}
+
+.countdown-timer {
+    text-align: center;
+    background-color: #f53a3f;
+    color: #faf9f9;
+}
+
+.countdown-timer h3 {
+    display: inline;
+    padding-right: 18px;
+}
+
+.countdown-timer .container {
+    padding: 26px 2%;
+}
+
+#countdown,
+#countdown2,
+#countdown3 {
+    padding: 15px;
+    color: #f53a3f;
+    background: #faf9f9;
+    display: inline;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.banner {
+    padding: 50px 2%;
+    background-color: #2d4574;
+}
+
+.banner h1,
+.banner span {
+    color: #faf9f9;
+    font-size: 34px;
+    line-height: calc(34px * 1.2);
+    font-family: "Lora", serif;
+}
+
+.banner h1 span {
+    color: #a4d445;
+}
+
+.video {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.video iframe,
+.videos-depoimentos iframe {
+    border-radius: 10px;
+    border: 8px solid #faf9f9;
+}
+
+section.compra {
+    text-align: center;
+    font-weight: bolder;
+    color: #2d4574;
+    background-color: #a4d445;
+}
+
+.dark-box {
+    border-radius: 10px;
+    padding: 26px;
+    background-color: #161b1c;
+    color: #faf9f9;
+}
+
+.dark-box h2,
+.receitas h2 {
+    color: #a4d445;
+}
+
+.transformacoes {
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.transformacoes p {
+    padding: 0 10px;
+}
+
+.transformacoes p i {
+    font-size: 26px;
+    color: #a4d445;
+    padding-right: 18px;
+}
+
+.cta {
+    text-align: center;
+    padding: 0 2%;
+}
+
+.cta p {
+    color: #161b1c;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.cta p span {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.cta a.button {
+    outline: none;
+    margin: 0 auto;
+    display: inline-block;
+    border: 0;
+    max-width: 1000px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: calc(30px * 1.2);
+    padding: 18px 26px;
+    color: #2d4574;
+    background-color: #a4d445;
+    border-bottom: 4px solid #70922d;
+    border-right: 4px solid #70922d;
+    transition: 0.5s;
+}
+
+.cta a.button:hover {
+    background-color: #2d4574;
+    border: 0;
+    color: #a4d445;
+    border-bottom: 4px solid #2d4574;
+    border-right: 4px solid #2d4574;
+}
+
+.ultimas-horas {
+    margin: 50px 0 0;
+    background-color: #2d4574;
+}
+
+.ultimas-horas h2 {
+    text-align: center;
+    color: #a4d445;
+}
+
+.divisao {
+    margin-top: 34px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.divisao img {
+    padding: 20px;
+    max-width: 100%;
+}
+
+.divisao ul {
+    padding-left: 50px;
+    list-style-position: inside;
+}
+
+.divisao ul li {
+    color: #faf9f9;
+    margin-top: 18px;
+    list-style-position: inside;
+}
+
+.escala {
+    padding: 50px 0;
+}
+
+.compra-espacada {
+    padding: 50px 0;
+}
+
+.receitas {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.receitas h2 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.receitas .container {
+    border-radius: 10px;
+    padding: 26px 2%;
+    background-color: #161b1c;
+    color: #faf9f9;
+}
+
+.opcoes-receitas {
+    margin-top: 34px;
+    color: #faf9f9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.opcoes-receitas-single {
+    padding: 18px;
+    margin-bottom: 42px;
+}
+
+.opcoes-receitas-single img {
+    border-radius: 50%;
+    max-width: 100%;
+    min-width: 200px;
+    width: 200px;
+    margin-bottom: 18px;
+}
+
+.disponibilidade {
+    background-color: #a4d445;
+    color: #2d4574;
+}
+
+.disponibilidade h2 {
+    text-align: center;
+}
+
+.disponibilidade p {
+    margin-top: 18px;
+}
+
+.opcoes-receitas-single h3 {
+    color: #a4d445;
+}
+
+.opcoes-receitas-single p {
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+.espaco-cliente img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.espaco-cliente {
+    color: #2d4574;
+    text-align: center;
+}
+
+.espaco-cliente h2 {
+    margin-top: 26px;
+}
+
+.espaco-cliente p {
+    margin-top: 18px;
+}
+
+img.depoimentos-prints {
+    max-width: 100%;
+    margin-top: 26px;
+}
+
+.depoimentos {
+    background-color: #161b1c;
+    text-align: center;
+    color: #a4d445;
+}
+
+.videos-depoimentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.videos-depoimentos iframe {
+    margin-top: 50px;
+    border: 4px solid #faf9f9;
+}
+
+.mais-depoimentos {
+    color: #2d4574;
+}
+
+.mais-depoimentos h2 {
+    text-align: center;
+}
+
+.mais-depoimentos-single {
+    border: 4px solid #2d4574;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 900px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+}
+
+.mais-depoimentos-single img {
+    max-width: 100%;
+    border: 4px solid #2d4574;
+    border-radius: 10px;
+}
+
+.mais-depoimentos-pessoa {
+    padding-left: 34px;
+}
+
+.mais-depoimentos-pessoa p:last-child {
+    padding-top: 26px;
+    font-weight: bolder;
+}
+
+.align {
+    text-align: center;
+}
+
+.motivacional {
+    border-radius: 10px;
+    padding: 18px 34px;
+    display: inline-block;
+    background-color: #2d4574;
+    color: #a4d445;
+}
+
+.motivacional p {
+    color: #faf9f9;
+    font-size: 16px;
+}
+
+.novo-metodo {
+    text-align: center;
+    background-color: #2d4574;
+}
+
+.novo-metodo h2 {
+    color: #a4d445;
+}
+
+.novo-metodo p {
+    color: #faf9f9;
+}
+
+.novo-metodo img {
+    margin-top: 34px;
+    max-width: 100%;
+    width: 800px;
+}
+
+.quem-deve-participar {
+    background-color: #fafafa;
+    color: #2d4574;
+}
+
+.quem-deve-participar img {
+    position: relative;
+    top: 50px;
+}
+
+.box-texto h2 {
+    margin-top: 26px;
+}
+
+.box-texto {
+    margin-top: 34px;
+}
+
+.box-texto p {
+    margin-top: 18px;
+}
+
+.divisao-quem-participar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.divisao-quem-participar img {
+    max-width: 100%;
+}
+
+.tenha-hoje {
+    text-align: center;
+}
+
+.oq-vai-receber {
+    background-color: #2d4574;
+    color: #faf9f9;
+}
+
+.oq-vai-receber .container {
+    max-width: 1000px;
+}
+
+.oq-vai-receber img {
+    max-width: 100%;
+    height: 500px;
+}
+
+.oq-vai-receber h2 {
+    color: #a4d445;
+}
+
+.oq-vai-receber h2,
+.oq-vai-receber p {
+    text-align: center;
+}
+
+.oq-vai-receber p {
+    margin-top: 18px;
+}
+
+.divisao-oq-vai-receber {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.textos-oq-vai-receber {
+    padding-left: 34px;
+}
+
+.textos-oq-vai-receber h3 {
+    color: #a4d445;
+}
+
+.textos-oq-vai-receber p {
+    margin-top: 18px;
+    text-align: left;
+}
+
+.textos-oq-vai-receber ul {
+    list-style: none;
+    margin-top: 34px;
+}
+
+.textos-oq-vai-receber ul li {
+    margin-top: 26px;
+}
+
+.textos-oq-vai-receber ul li:last-child {
+    font-weight: bolder;
+}
+
+.textos-oq-vai-receber ul li i {
+    color: #a4d445;
+    font-size: 26px;
+    padding-right: 18px;
+}
+
+.img-baixo,
+.texto-baixo {
+    margin-top: 50px;
+}
+
+.texto-baixo ul li img.facebook {
+    width: 38px;
+    height: 20px;
+    padding-right: 18px;
+}
+
+.funcionamento {
+    color: #2d4574;
+    text-align: center;
+}
+
+.funcionamento iframe {
+    margin-top: 50px;
+    height: 500px;
+}
+
+.funcionamento p {
+    margin-top: 34px;
+}
+
+.funcionamento h2 {
+    background-color: #2d4574;
+    border-radius: 10px;
+    padding: 18px 34px;
+    color: #a4d445;
+    margin-top: 34px;
+}
+
+.garantia {
+    background-color: #2d4574;
+    color: #faf9f9;
+}
+
+.garantia h2 {
+    text-align: center;
+    color: #a4d445;
+}
+
+.garantia img {
+    max-width: 100%;
+    width: 300px;
+    margin: 34px auto;
+    display: block;
+}
+
+.vendinha {
+    text-align: center;
+    font-weight: bolder;
+    color: #a4d445;
+}
+
+.garantia p {
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.garantia p:last-child {
+    margin: 18px auto;
+}
+
+.garantia .cta a:hover {
+    background-color: #faf9f9;
+    color: #2d4574;
+}
+
+.perguntas-frequentes {
+    margin: 50px auto;
+}
+
+.perguntas-frequentes .container {
+    background-color: #161b1c;
+    border-radius: 10px;
+    color: #faf9f9;
+}
+
+.perguntas-frequentes h2 {
+    text-align: center;
+    color: #a4d445;
+}
+
+.perguntas-frequentes h3 {
+    text-align: left;
+    color: #a4d445;
+}
+
+.box-perguntas {
+    margin-top: 34px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.box-perguntas-single {
+    padding: 18px;
+    margin-top: 34px;
+}
+
+.box-perguntas-single p {
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+.pessoas-comuns {
+    color: #2d4574;
+}
+
+.pessoas-comuns h2 {
+    text-align: center;
+}
+
+.pessoas-comuns img {
+    text-align: center;
+    width: 300px;
+    border: 4px solid #2d4574;
+    border-radius: 10px;
+}
+
+.pessoas-comuns-single {
+    border: 4px solid #2d4574;
+    border-radius: 10px;
+    padding: 18px;
+    text-align: left;
+    margin: 50px auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.info-pessoas-comuns {
+    padding-left: 26px;
+    align-self: center;
+}
+
+.costume-compra-internet {
+    text-align: center;
+    background-color: #2d4574;
+    color: #faf9f9;
+}
+
+.costume-compra-internet h2 {
+    color: #a4d445;
+}
+
+.costume-compra-internet h3 {
+    margin-top: 18px;
+}
+
+.costume-compra-internet p {
+    text-align: left;
+    padding-left: 18px;
+    margin-top: 26px;
+    display: inline-block;
+}
+
+.costume-compra-internet i {
+    display: inline-block;
+    font-size: 34px;
+    color: #a4d445;
+}
+
+.costume-compra-internet p.p-first {
+    margin-top: 34px;
+}
+
+.costume-compra-internet .cta {
+    margin-top: 50px;
+}
+
+.costume-compra-internet .cta a:hover {
+    background-color: #faf9f9;
+}
+
+.aviso {
+    font-size: 8px;
+    line-height: calc(16px * 1.5);
+    color: #faf9f9;
+    background-color: #161b1ce1;
+}
+
+.aviso p {
+    font-size: 16px;
+    line-height: calc(16px * 1.5);
+}
+
+.rodape {
+    color: #faf9f9;
+    background-color: #161b1c;
+    text-align: center;
+}
+
+.rodape p {
+    font-size: 16px;
+    line-height: calc(16px * 1.5);
+}
+
+@media screen and (max-width: 1024px) {
+    .banner h1,
+    span {
+        font-size: 26px;
+        line-height: calc(34px * 1.2);
+    }
+
+    .opcoes-receitas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .videos-depoimentos {
+        grid-template-columns: 1fr;
+    }
+
+    .divisao-quem-participar {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .transformacoes {
+        grid-template-columns: 1fr;
+    }
+
+    .transformacoes p:first-child {
+        margin-top: 34px;
+    }
+
+    .transformacoes p:last-child {
+        margin-bottom: 34px;
+    }
+
+    .transformacoes p {
+        margin-top: 34px;
+    }
+
+    .cta a.button {
+        font-size: 24px;
+    }
+
+    .divisao {
+        margin-top: 34px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .opcoes-receitas {
+        grid-template-columns: 1fr;
+    }
+
+    .opcoes-receitas-single p {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .mais-depoimentos-single {
+        grid-template-columns: 1fr;
+    }
+
+    .mais-depoimentos-single p {
+        margin-top: 18px;
+    }
+
+    .mais-depoimentos-pessoa {
+        padding-left: 0;
+    }
+
+    .mais-depoimentos-pessoa p:last-child {
+        padding-top: 18px;
+    }
+
+    .divisao-oq-vai-receber {
+        grid-template-columns: 1fr;
+    }
+
+    .divisao-oq-vai-receber img {
+        margin: 50px auto;
+    }
+
+    .divisao-oq-vai-receber img:last-child {
+        margin: 0px auto;
+    }
+
+    .box-perguntas {
+        max-width: 500px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+
+    .pessoas-comuns-single {
+        margin: 42px auto;
+        grid-template-columns: 1fr;
+    }
+
+    .pessoas-comuns-single img {
+        max-width: 100%;
+        margin: 18px auto;
+        grid-template-columns: 1fr;
+    }
+
+    .info-pessoas-comuns {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 26px;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #countdown,
+    #countdown2,
+    #countdown3 {
+        margin: 18px auto 0;
+        display: block;
+        width: 50%;
+    }
+}
